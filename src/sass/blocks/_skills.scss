@@ -5,6 +5,7 @@
 		display: grid;
 		grid-template-columns: repeat(4, 270px);
 		grid-template-rows: minmax(270px, auto);
+		grid-auto-rows: minmax(270px, auto);
 		gap: 13px;
 		justify-content: center;
 	}
@@ -35,8 +36,10 @@
 		display: grid;
 		grid-template-columns: repeat(3, 350px);
 		grid-template-rows: repeat(2, 70px);
+		grid-auto-rows: 70px;
 		column-gap: 45px;
 		row-gap: 30px;
+		justify-content: center;
 		&-item {
 			position: relative;
 		}
@@ -56,7 +59,6 @@
 		&-positive {
 			position: absolute;
 			bottom: 0;
-			width: 250px;
 			height: 14px;
 			background-color: $main-color;
 			border-radius: 4px;
@@ -68,7 +70,7 @@
 			height: 14px;
 			background-color: #E8E4DE;
 			border-radius: 4px;
-			width: 350px;
+			width: 100%;
 			z-index: 0;
 		}
 	}

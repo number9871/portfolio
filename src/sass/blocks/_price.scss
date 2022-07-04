@@ -15,6 +15,7 @@
     &__item {
         display: grid;
         grid-template: 21px  18px / 200px 125px;
+        grid-auto-rows: minmax(45px, auto);
         justify-content: space-between;
         align-content: space-between;
         padding-left: 25px;
